@@ -1,0 +1,12 @@
+#+title: My website in Org Mode
+
+* Overview
+
+This is a test of use *org mode* for create a _website_, You can see the full proyect [[https://github.com/regalk13/website-org-mode][here.]]
+
+Example link to my Emacs configuration [[./emacs.org][Emacs Config]]
+
+
+* How it works
+
+bla bla bla bla... (TO DO :)
