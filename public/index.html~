@@ -13,9 +13,9 @@
 <div id="content" class="content">
 <h1 class="title">My website in Org Mode</h1>
 
-<div id="outline-container-org1a56a04" class="outline-2">
-<h2 id="org1a56a04">Overview</h2>
-<div class="outline-text-2" id="text-org1a56a04">
+<div id="outline-container-orgac62b41" class="outline-2">
+<h2 id="orgac62b41">Overview</h2>
+<div class="outline-text-2" id="text-orgac62b41">
 <p>
 This is a test of use <b>org mode</b> for create a <span class="underline">website</span>, You can see the full proyect <a href="https://github.com/regalk13/website-org-mode">here.</a>
 </p>
@@ -27,9 +27,9 @@ Example link to my Emacs configuration <a href="./emacs.html">Emacs Config</a>
 </div>
 
 
-<div id="outline-container-org0c54a1c" class="outline-2">
-<h2 id="org0c54a1c">How it works</h2>
-<div class="outline-text-2" id="text-org0c54a1c">
+<div id="outline-container-orgf473235" class="outline-2">
+<h2 id="orgf473235">How it works</h2>
+<div class="outline-text-2" id="text-orgf473235">
 <p>
 bla bla bla bla&#x2026; (TO DO :)
 </p>
