@@ -32,7 +32,7 @@
              :publishing-directory "./public"   ;; Export folder
              :with-author nil                   ;; Don't show author
              :with-creator t                    ;; Show emacs and org version
-             :with-toc nil                      ;; Don't show tables of content
+             :with-toc t                      ;; Don't show tables of content
              :section-numbers nil               ;; No number section
              :time-stamp-file nil)))            ;; No time stamp in the file
 
