@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Install Emacs
-        run: sudo apt install emacs-nox --yes
+        run: sudo apt install emacs --yes
 
       - name: Check Perms
         run: chmod +x ./build.sh
