@@ -19,20 +19,19 @@
 ;; Customize the HTML output
 (setq org-html-validation-link nil              ;; Don't show validation link
       org-html-head-include-scripts nil         ;; Use own scripts
-      org-html-head-include-default-style nil   ;; Use own styles
-      org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />")
+      org-html-head-include-default-style nil)
 
 ;; Define the publishing project
 (setq org-publish-project-alist
       (list
        (list "website-org-mode"
              :recursive t
-             :base-directory "./content"        ;; Base directory whit source
+             :base-directory "./content"
              :publishing-function 'org-html-publish-to-html
-             :publishing-directory "./public"   ;; Export folder
+             :publishing-directory "./public"
              :with-author nil                   ;; Don't show author
              :with-creator t                    ;; Show emacs and org version
-             :with-toc t                      ;; Don't show tables of content
+             :with-toc nil                      ;; Don't show tables of content
              :section-numbers nil               ;; No number section
              :time-stamp-file nil)))            ;; No time stamp in the file
 
