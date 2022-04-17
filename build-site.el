@@ -4,7 +4,6 @@
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
                          ("elpa" . "https://elpa.gnu.org/packages/")))
 
-
 ;; init package system
 (package-initialize)
 (unless package-archive-contents
@@ -26,16 +25,16 @@
 ;; Define the publishing project
 (setq org-publish-project-alist
       (list
-       (list "website-org-mode"
+       (list "my-website-org-mode"
              :recursive t
-             :base-directory "./content"
-             :publishing-directory "./public"
+             :base-directory "./content"        ;; Base directory whit source
+             :publishing-directory "./public"   ;; Export folder
              :publishing-function 'org-html-publish-to-html
-             :with-author nil
-             :with-creator t
-             :with-toc nil
-             :section-numbers nil
-             :time-stamp-file nil)))
+             :with-author nil                   ;; Don't show author
+             :with-creator t                    ;; Show emacs and org version
+             :with-toc nil                      ;; Don't show tables of content
+             :section-numbers nil               ;; No number section
+             :time-stamp-file nil)))            ;; No time stamp in the file
 
 ;; Generate the site output
 (org-publish-all t)
