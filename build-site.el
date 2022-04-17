@@ -25,20 +25,18 @@
 ;; Define the publishing project
 (setq org-publish-project-alist
       (list
-       (list "org-site:main"
+       (list "website-org-mode"
              :recursive t
              :base-directory "./content"
              :publishing-function 'org-html-publish-to-html
              :publishing-directory "./public"
-             :with-author nil           ;; Don't include author name
-             :with-creator t            ;; Include Emacs and Org versions in footer
-             :with-toc t                ;; Include a table of contents
-             :section-numbers nil       ;; Don't include section numbers
-             :time-stamp-file nil)))    ;; Don't include time stamp in file
+             :with-author nil                   ;; Don't show author
+             :with-creator t                    ;; Show emacs and org version
+             :with-toc t                      ;; Don't show tables of content
+             :section-numbers nil               ;; No number section
+             :time-stamp-file nil)))            ;; No time stamp in the file
 
 ;; Generate the site output
 (org-publish-all t)
-
-
 
 (message "Build complete!")
