@@ -9,14 +9,11 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Check Out
+      - name: Check out
         uses: actions/checkout@v1
 
       - name: Install Emacs
-        run: sudo apt install emacs --yes
-
-      - name: Check Perms
-        run: chmod +x ./build.sh
+        run: sudo apt install emacs-nox --yes
 
       - name: Build the site
         run: ./build.sh
