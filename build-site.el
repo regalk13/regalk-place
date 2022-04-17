@@ -25,11 +25,11 @@
 ;; Define the publishing project
 (setq org-publish-project-alist
       (list
-       (list "my-website-org-mode"
+       (list "website-org-mode"
              :recursive t
              :base-directory "./content"        ;; Base directory whit source
-             :publishing-directory "./public"   ;; Export folder
              :publishing-function 'org-html-publish-to-html
+             :publishing-directory "./public"   ;; Export folder
              :with-author nil                   ;; Don't show author
              :with-creator t                    ;; Show emacs and org version
              :with-toc nil                      ;; Don't show tables of content
@@ -38,3 +38,6 @@
 
 ;; Generate the site output
 (org-publish-all t)
+
+
+(message "Build complete!")
