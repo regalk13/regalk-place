@@ -2,14 +2,14 @@
 
 * Overview
 
-This is a test of use *org mode* for create a _website_ for save my dotfiles, (first this was my personal website.. but I have a new idea for my personal website so...) You can see the full proyect [[https://github.com/regalk13/website-org-mode][here.]]
+This is a test of use *org mode* for create a _website_ for save my dotfiles. You can see the full proyect [[https://github.com/regalk13/website-org-mode][here.]]
 
 * How it works
 
 I use a simple package to compile from org-mode to HTML named html-size and using a css public for org-mode, you can see more in build-site.el in the source code. After I use the emacs elips interpreter to compile the website
 and whit github actions the deploy is up and online!
 
-* The configs
+* The dotfiles
 
 The purpose of this website is save and publish my dotfiles, but first I will have to update and change them to org-mode.
 
