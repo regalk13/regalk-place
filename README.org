@@ -14,4 +14,4 @@ and whit github actions the deploy is up and online!
 The purpose of this website is save and publish my dotfiles, but first I will have to update and change them to org-mode.
 
 
-- [[./emacs.org][Emacs Config]]
+- [[https://github.com/regalk13/dotfiles-website/blob/main/content/emacs.org][Emacs Config]]
