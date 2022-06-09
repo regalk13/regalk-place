@@ -1,8 +1,8 @@
-#+title: My dotfles website in Org Mode
+#+title: My Dotfiles Website in Org Mode
 
 * Overview
 
-This is a test of use *org mode* for create a _website_ for save my dotfiles, You can see the full proyect [[https://github.com/regalk13/website-org-mode][here.]]
+This is a test of use *org mode* for create a _website_ for save my dotfiles, (first this was my personal website.. but I have a new idea for my personal website so...) You can see the full proyect [[https://github.com/regalk13/website-org-mode][here.]]
 
 * How it works
 
@@ -11,7 +11,7 @@ and whit github actions the deploy is up and online!
 
 * The configs
 
-The purpouse of this website is save and publish my dotfiles, but first I will have to update and change them to org-mode.
+The purpose of this website is save and publish my dotfiles, but first I will have to update and change them to org-mode.
 
 
 - [[./emacs.org][Emacs Config]]
