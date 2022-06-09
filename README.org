@@ -2,7 +2,7 @@
 
 * Overview
 
-This is a test of use *org mode* for create a _website_ for save my dotfiles. You can see the full proyect [[https://github.com/regalk13/website-org-mode][here.]]
+This is a test of use *org mode* for create a _website_ for save my dotfiles. You can see the website [[https://regalk13.github.io/dotfiles-website/][here.]]
 
 * How it works
 
