@@ -5,36 +5,36 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>My dotfles website in Org Mode</title>
+<title>My Dotfiles Website in Org Mode</title>
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">My dotfles website in Org Mode</h1>
+<h1 class="title">My Dotfiles Website in Org Mode</h1>
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgbc20d1d">Overview</a></li>
-<li><a href="#orgf7687c5">How it works</a></li>
-<li><a href="#org65e6be4">The configs</a></li>
+<li><a href="#org63ee7fc">Overview</a></li>
+<li><a href="#orgec014b9">How it works</a></li>
+<li><a href="#org7dabc38">The configs</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgbc20d1d" class="outline-2">
-<h2 id="orgbc20d1d">Overview</h2>
-<div class="outline-text-2" id="text-orgbc20d1d">
+<div id="outline-container-org63ee7fc" class="outline-2">
+<h2 id="org63ee7fc">Overview</h2>
+<div class="outline-text-2" id="text-org63ee7fc">
 <p>
 This is a test of use <b>org mode</b> for create a <span class="underline">website</span> for save my dotfiles, (first this was my personal website.. but I have a new idea for my personal website so&#x2026;) You can see the full proyect <a href="https://github.com/regalk13/website-org-mode">here.</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgf7687c5" class="outline-2">
-<h2 id="orgf7687c5">How it works</h2>
-<div class="outline-text-2" id="text-orgf7687c5">
+<div id="outline-container-orgec014b9" class="outline-2">
+<h2 id="orgec014b9">How it works</h2>
+<div class="outline-text-2" id="text-orgec014b9">
 <p>
 I use a simple package to compile from org-mode to HTML named html-size and using a css public for org-mode, you can see more in build-site.el in the source code. After I use the emacs elips interpreter to compile the website
 and whit github actions the deploy is up and online!
@@ -42,9 +42,9 @@ and whit github actions the deploy is up and online!
 </div>
 </div>
 
-<div id="outline-container-org65e6be4" class="outline-2">
-<h2 id="org65e6be4">The configs</h2>
-<div class="outline-text-2" id="text-org65e6be4">
+<div id="outline-container-org7dabc38" class="outline-2">
+<h2 id="org7dabc38">The configs</h2>
+<div class="outline-text-2" id="text-org7dabc38">
 <p>
 The purpose of this website is save and publish my dotfiles, but first I will have to update and change them to org-mode.
 </p>
