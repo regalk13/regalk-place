@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Welcome to Regalk's place</title>
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" href="../content/css/style.css" /><link href="fonts/iosevka.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css" /><link href="fonts/iosevka.css" rel="stylesheet"/>
 </head>
 <body>
 <div id="content" class="content">
@@ -27,9 +27,9 @@
 </div>
 <br>
 
-<div id="outline-container-org82c3ef5" class="outline-2">
-<h2 id="org82c3ef5">About Me</h2>
-<div class="outline-text-2" id="text-org82c3ef5">
+<div id="outline-container-org3283172" class="outline-2">
+<h2 id="org3283172">About Me</h2>
+<div class="outline-text-2" id="text-org3283172">
 
 <p>Current <span class="mark">Software Engineer</span>. Some years experience, specializing in the <span class="mark">backend development</span>, infrastructure automation, and computer graphics. Lover of editors and tools like <span class="mark">Emacs</span> and <span class="mark">Linux</span>. Interested in devising a better problem-solving methods for challenging tasks.</p>
 <p>At the moment, this are the languages and frameworks that make up my stack: </p>
@@ -56,9 +56,9 @@
 </div>
 </div>
 
-<div id="outline-container-org747d60a" class="outline-2">
-<h2 id="org747d60a">Contact me</h2>
-<div class="outline-text-2" id="text-org747d60a">
+<div id="outline-container-org4e58867" class="outline-2">
+<h2 id="org4e58867">Contact me</h2>
+<div class="outline-text-2" id="text-org4e58867">
 
 <p>If you'd like to get in touch with me regarding a project, partnership, or other professional inquiry, feel free to reach out via email at <span class="mark">regalkinformation@gmail.com</span> or on Discord at <span class="mark">regalk#8443</span>. You can also find me on Twitter at <span class="mark">@reg4Ik</span>. I am always open to new opportunities and collaborations, and I strive to maintain clear and timely communication with all of my contacts.</p>
 </div>
