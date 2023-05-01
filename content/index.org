@@ -6,7 +6,7 @@
     |
     <span class="topbar-menu current"><a href="#">Home</a></span>
     |
-    <span class="topbar-menu"><a href="emacs.html">Dotfiles</a></span>
+    <span class="topbar-menu"><a href="dotfiles.html">Dotfiles</a></span>
     |
     <span class="topbar-menu"><a href="#">Projects</a></span>
     |
@@ -34,7 +34,7 @@
    <li>SQL & NO-SQL</li>
 </ul>
 
-<p>Read more about my skills and projects in my <a src="https://github.com/regalk13">github</a>.
+<p>Read more about my skills and projects in my <a href="https://github.com/regalk13">github</a>.
 <h3>Fun Facts</h3>
 
 <ul>

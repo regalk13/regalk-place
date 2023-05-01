@@ -1,0 +1,42 @@
+#+title: Dotfiles
+#+AUTHOR: Regalk
+
+#+begin_export html
+<div class="header">
+  <div class="topbar-menu-container">
+    |
+    <span class="topbar-menu current"><a href="index.html">Home</a></span>
+    |
+    <span class="topbar-menu"><a href="#">Dotfiles</a></span>
+    |
+    <span class="topbar-menu"><a href="#">Projects</a></span>
+    |
+    <span class="topbar-menu"><a href="#">Blog</a></span>
+    |
+  </div>
+</div>
+<br>
+#+end_export
+
+#+begin_export html
+<p>These are my <span class="mark">dotfiles</span>. Dotfiles are configuration files for various command-line applications and utilities on <span class="mark">Unix-like</span> operating systems. They are called 'dotfiles' because their filenames begin with a dot (.) and are typically stored in the home directory. These files are loaded automatically when you start a new terminal session and contain customized settings for your shell, text editors, version control systems, and other command-line tools.
+
+In my dotfiles, I have customized my <span class="mark">shell</span> prompts, <span class="mark">editors</span> and <span class="mark">Linux</span> tools.
+Feel free to explore my dotfiles to see how I have customized my environment and workflow.</p>
+#+end_export
+
+* List of configurations
+
+#+begin_export html
+<ul id="dot-list">
+    <li><a href="dotfiles/emacs.html">Emacs</a></li>
+    <li>A</li>
+</ul>
+
+<script>
+  const list = document.getElementById('dot-list');
+  const items = Array.from(list.getElementsByTagName('li'));
+  items.sort((a, b) => a.textContent.localeCompare(b.textContent));
+  items.forEach(item => list.appendChild(item));
+</script>
+#+end_export
