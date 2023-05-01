@@ -1,0 +1,40 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 20px 0px;
+    line-height: 1.5;
+    background-color: #0D1017;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Iosevka Web', 'Gill Sans';
+    text-align: justify;
+}
+
+#content {
+    display: block;
+    margin: 0 0 20px;
+}
+
+.title {
+    color: #39BAE6;
+    font-size: 45px;
+}
+
+h2 {
+    color: #FF8F40;
+    font-size: 30px;
+}
+
+h3 {
+    color: #FF8F40;
+    font-size: 22px;
+}
+
+a {
+    color: #39BAE6;
+    text-shadow: rgba(0, 73, 142, 0.5) 0px 0px 5px;
+}
+
+.mark {
+    color: #FF8F40; 
+}
