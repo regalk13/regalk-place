@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Dotfiles</title>
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" href="../content/css/style.css" /><link href="fonts/iosevka.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css" /><link href="fonts/iosevka.css" rel="stylesheet"/>
 </head>
 <body>
 <div id="content" class="content">
@@ -32,9 +32,9 @@
 In my dotfiles, I have customized my <span class="mark">shell</span> prompts, <span class="mark">editors</span> and <span class="mark">Linux</span> tools.
 Feel free to explore my dotfiles to see how I have customized my environment and workflow.</p>
 
-<div id="outline-container-org1951136" class="outline-2">
-<h2 id="org1951136">List of configurations</h2>
-<div class="outline-text-2" id="text-org1951136">
+<div id="outline-container-org0ed649d" class="outline-2">
+<h2 id="org0ed649d">List of configurations</h2>
+<div class="outline-text-2" id="text-org0ed649d">
 <ul id="dot-list">
     <li><a href="dotfiles/emacs.html">Emacs</a></li>
     <li>A</li>

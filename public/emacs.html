@@ -14,14 +14,14 @@
 <div id="content" class="content">
 <h1 class="title">Emacs Configuration</h1>
 
-<div id="outline-container-org86ac52a" class="outline-2">
-<h2 id="org86ac52a">IMPORTANT! PUT THIS IN YOUR INIT.EL</h2>
-<div class="outline-text-2" id="text-org86ac52a">
+<div id="outline-container-org4183845" class="outline-2">
+<h2 id="org4183845">IMPORTANT! PUT THIS IN YOUR INIT.EL</h2>
+<div class="outline-text-2" id="text-org4183845">
 <p>
 If you want Emacs load the config from org file to init.el you need to add this code. This tells emacs to use this file to load the configuration.
 </p>
 
-<pre class="example" id="orgca0a9ff">
+<pre class="example" id="org6017b9b">
 (org-babel-load-file
 (expand-file-name
 "emacs.org"
@@ -30,9 +30,9 @@ user-emacs-directory))
 </div>
 </div>
 
-<div id="outline-container-org78fa4e9" class="outline-2">
-<h2 id="org78fa4e9">ABOUT THIS CONFIG</h2>
-<div class="outline-text-2" id="text-org78fa4e9">
+<div id="outline-container-org39eb173" class="outline-2">
+<h2 id="org39eb173">ABOUT THIS CONFIG</h2>
+<div class="outline-text-2" id="text-org39eb173">
 <p>
 This is my personal Emacs config. Inspired by a brunch of resources I've found online. This is a vanilla emacs configuration whit some packages tome make a better experiencie whit this great elisp interpreter. I'm trying to maintain this config for me but also for works in every computer, but&#x2026; need some changes to do that. If you have improves to my code just pull a request.
 </p>
@@ -40,9 +40,9 @@ This is my personal Emacs config. Inspired by a brunch of resources I've found o
 </div>
 
 
-<div id="outline-container-org4a2d1c7" class="outline-2">
-<h2 id="org4a2d1c7">Setup the UI</h2>
-<div class="outline-text-2" id="text-org4a2d1c7">
+<div id="outline-container-orgd617eb5" class="outline-2">
+<h2 id="orgd617eb5">Setup the UI</h2>
+<div class="outline-text-2" id="text-orgd617eb5">
 <p>
 First of all I like this configuration to setup the UI of emacs, I delete the startup message, the menu-bar, tool-bar and some scroll bar that emacs have for default:
 </p>
@@ -61,9 +61,9 @@ First of all I like this configuration to setup the UI of emacs, I delete the st
 </div>
 </div>
 
-<div id="outline-container-org12ee8da" class="outline-2">
-<h2 id="org12ee8da">A few programs to load</h2>
-<div class="outline-text-2" id="text-org12ee8da">
+<div id="outline-container-org266ae53" class="outline-2">
+<h2 id="org266ae53">A few programs to load</h2>
+<div class="outline-text-2" id="text-org266ae53">
 <p>
 I add the repo of melpa, org and elpa to the source for packages, and after I load a few programs
 </p>
@@ -82,9 +82,9 @@ I add the repo of melpa, org and elpa to the source for packages, and after I lo
 </div>
 </div>
 
-<div id="outline-container-org7964d0e" class="outline-3">
-<h3 id="org7964d0e">use-package</h3>
-<div class="outline-text-3" id="text-org7964d0e">
+<div id="outline-container-orgef3e204" class="outline-3">
+<h3 id="orgef3e204">use-package</h3>
+<div class="outline-text-3" id="text-orgef3e204">
 <p>
 Install use-package and enable ':ensure t' globally.  The ':ensure' keyword causes the package(s) within use-package statements to be installed automatically if not already present on your system.  To avoid having to add ':ensure t' to every use-package statement in this config, I set 'use-package-always-ensure'.
 </p>
@@ -100,13 +100,13 @@ Install use-package and enable ':ensure t' globally.  The ':ensure' keyword caus
 </div>
 </div>
 
-<div id="outline-container-orga0c4534" class="outline-2">
-<h2 id="orga0c4534">Themes and Fonts</h2>
-<div class="outline-text-2" id="text-orga0c4534">
+<div id="outline-container-org122154d" class="outline-2">
+<h2 id="org122154d">Themes and Fonts</h2>
+<div class="outline-text-2" id="text-org122154d">
 </div>
-<div id="outline-container-orgd1ab54d" class="outline-3">
-<h3 id="orgd1ab54d">Fonts</h3>
-<div class="outline-text-3" id="text-orgd1ab54d">
+<div id="outline-container-orgcb2d7e3" class="outline-3">
+<h3 id="orgcb2d7e3">Fonts</h3>
+<div class="outline-text-3" id="text-orgcb2d7e3">
 <p>
 Currently I'm using FiraCode Nerd Font, and I set this whit set-face-attribute as default and height of 97, you can change this in order to you display DPI, also I set all-the-icons:
 </p>
@@ -119,9 +119,9 @@ Currently I'm using FiraCode Nerd Font, and I set this whit set-face-attribute a
 </div>
 </div>
 
-<div id="outline-container-orgd9fea6e" class="outline-3">
-<h3 id="orgd9fea6e">Themes</h3>
-<div class="outline-text-3" id="text-orgd9fea6e">
+<div id="outline-container-orgbf6e33f" class="outline-3">
+<h3 id="orgbf6e33f">Themes</h3>
+<div class="outline-text-3" id="text-orgbf6e33f">
 <p>
 I'm using the Doom Emacs themes, this repo have a lot of themes you can choose in my case im using a gruvbox theme for emacs&#x2026; You can watch the repo and select your favorite theme. I set the teme for neotree, treemacs and org-config. And in code is this:
 </p>
@@ -142,9 +142,9 @@ I'm using the Doom Emacs themes, this repo have a lot of themes you can choose i
 </div>
 </div>
 
-<div id="outline-container-orgbbf2b4f" class="outline-3">
-<h3 id="orgbbf2b4f">Rainbow delimiters</h3>
-<div class="outline-text-3" id="text-orgbbf2b4f">
+<div id="outline-container-orgb1fdeda" class="outline-3">
+<h3 id="orgb1fdeda">Rainbow delimiters</h3>
+<div class="outline-text-3" id="text-orgb1fdeda">
 <p>
 The rainbow delimiters are a package to add different colors to parentheses, braces and brackets to find them when they are nested in a better way.
 </p>
@@ -158,9 +158,9 @@ The rainbow delimiters are a package to add different colors to parentheses, bra
 </div>
 </div>
 
-<div id="outline-container-orga1f942d" class="outline-2">
-<h2 id="orga1f942d">Set key &lt;escace&gt;</h2>
-<div class="outline-text-2" id="text-orga1f942d">
+<div id="outline-container-org03d9e9f" class="outline-2">
+<h2 id="org03d9e9f">Set key &lt;escace&gt;</h2>
+<div class="outline-text-2" id="text-org03d9e9f">
 <p>
 I set escape to quit of whatever thing in emacs:
 </p>
@@ -172,9 +172,9 @@ I set escape to quit of whatever thing in emacs:
 </div>
 </div>
 
-<div id="outline-container-org29bd4e7" class="outline-2">
-<h2 id="org29bd4e7">Columns and numbers</h2>
-<div class="outline-text-2" id="text-org29bd4e7">
+<div id="outline-container-org7ce5f24" class="outline-2">
+<h2 id="org7ce5f24">Columns and numbers</h2>
+<div class="outline-text-2" id="text-org7ce5f24">
 <p>
 Setting the columns and the numbers in, also I add a list to ignore add this column:
 </p>
@@ -193,9 +193,9 @@ Setting the columns and the numbers in, also I add a list to ignore add this col
 </div>
 </div>
 
-<div id="outline-container-orgf983a38" class="outline-2">
-<h2 id="orgf983a38">Adding command-log-mode</h2>
-<div class="outline-text-2" id="text-orgf983a38">
+<div id="outline-container-orgc8499af" class="outline-2">
+<h2 id="orgc8499af">Adding command-log-mode</h2>
+<div class="outline-text-2" id="text-orgc8499af">
 <p>
 Command-log-mode is a package to save all the history of keybindings, for testing and debuging and maybe my future streams:
 </p>
@@ -207,9 +207,9 @@ Command-log-mode is a package to save all the history of keybindings, for testin
 </div>
 </div>
 
-<div id="outline-container-orgb7586b5" class="outline-2">
-<h2 id="orgb7586b5">Whick key</h2>
-<div class="outline-text-2" id="text-orgb7586b5">
+<div id="outline-container-orgb0898f0" class="outline-2">
+<h2 id="orgb0898f0">Whick key</h2>
+<div class="outline-text-2" id="text-orgb0898f0">
 <p>
 This package will show you the avaliable keybindings in popup:
 </p>
@@ -225,9 +225,9 @@ This package will show you the avaliable keybindings in popup:
 </div>
 </div>
 
-<div id="outline-container-org7f43ceb" class="outline-2">
-<h2 id="org7f43ceb">Setting ivy and counsel</h2>
-<div class="outline-text-2" id="text-org7f43ceb">
+<div id="outline-container-org4556601" class="outline-2">
+<h2 id="org4556601">Setting ivy and counsel</h2>
+<div class="outline-text-2" id="text-org4556601">
 <p>
 Ivy is a generic completion mechanism for Emacs. While it operates similarly to other completion schemes such as icomplete-mode, Ivy aims to be more efficient, smaller, simpler, and smoother to use yet highly customizable.
 </p>
@@ -262,9 +262,9 @@ Ivy is a generic completion mechanism for Emacs. While it operates similarly to 
 </div>
 </div>
 
-<div id="outline-container-org608de88" class="outline-3">
-<h3 id="org608de88">ivy-rich</h3>
-<div class="outline-text-3" id="text-org608de88">
+<div id="outline-container-org91fbab2" class="outline-3">
+<h3 id="org91fbab2">ivy-rich</h3>
+<div class="outline-text-3" id="text-org91fbab2">
 <p>
 Setting the ivy-rich:
 </p>
@@ -279,9 +279,9 @@ Setting the ivy-rich:
 </div>
 </div>
 
-<div id="outline-container-org8aa8145" class="outline-2">
-<h2 id="org8aa8145">Elcord</h2>
-<div class="outline-text-2" id="text-org8aa8145">
+<div id="outline-container-orgc53aa1c" class="outline-2">
+<h2 id="orgc53aa1c">Elcord</h2>
+<div class="outline-text-2" id="text-orgc53aa1c">
 <p>
 I usually use discord and I like to compart in the rich presence, where, which time and whwat file I'm editing this package helps me:
 </p>
@@ -294,9 +294,9 @@ I usually use discord and I like to compart in the rich presence, where, which t
 </div>
 </div>
 
-<div id="outline-container-orge1bbf35" class="outline-2">
-<h2 id="orge1bbf35">Doom modeline</h2>
-<div class="outline-text-2" id="text-orge1bbf35">
+<div id="outline-container-orgda6b037" class="outline-2">
+<h2 id="orgda6b037">Doom modeline</h2>
+<div class="outline-text-2" id="text-orgda6b037">
 <p>
 A fancy and fast mode-line inspired by minimalism design.
 </p>
@@ -311,9 +311,9 @@ A fancy and fast mode-line inspired by minimalism design.
 </div>
 </div>
 
-<div id="outline-container-orgddde7e3" class="outline-2">
-<h2 id="orgddde7e3">General</h2>
-<div class="outline-text-2" id="text-orgddde7e3">
+<div id="outline-container-org6f79ce0" class="outline-2">
+<h2 id="org6f79ce0">General</h2>
+<div class="outline-text-2" id="text-org6f79ce0">
 <p>
 General package provides a more convenient method for binding keys in emacs (for both evil and non-evil users).
 </p>
@@ -330,9 +330,9 @@ General package provides a more convenient method for binding keys in emacs (for
 </div>
 </div>
 
-<div id="outline-container-org24a058a" class="outline-2">
-<h2 id="org24a058a">Evil mode</h2>
-<div class="outline-text-2" id="text-org24a058a">
+<div id="outline-container-org8d5d630" class="outline-2">
+<h2 id="org8d5d630">Evil mode</h2>
+<div class="outline-text-2" id="text-org8d5d630">
 <p>
 Evil is an extensible vi layer for Emacs. It emulates the main features of Vim, and provides facilities for writing custom extensions.
 </p>
@@ -366,9 +366,9 @@ Evil is an extensible vi layer for Emacs. It emulates the main features of Vim, 
 </div>
 </div>
 
-<div id="outline-container-org2ce562b" class="outline-2">
-<h2 id="org2ce562b">Hydra</h2>
-<div class="outline-text-2" id="text-org2ce562b">
+<div id="outline-container-org52b6fcb" class="outline-2">
+<h2 id="org52b6fcb">Hydra</h2>
+<div class="outline-text-2" id="text-org52b6fcb">
 <p>
 This is a package for GNU Emacs that can be used to tie related commands into a family of short bindings with a common prefix - a Hydra.
 </p>
@@ -388,9 +388,9 @@ This is a package for GNU Emacs that can be used to tie related commands into a 
 </div>
 </div>
 
-<div id="outline-container-org3747a91" class="outline-2">
-<h2 id="org3747a91">Projectile</h2>
-<div class="outline-text-2" id="text-org3747a91">
+<div id="outline-container-org4759344" class="outline-2">
+<h2 id="org4759344">Projectile</h2>
+<div class="outline-text-2" id="text-org4759344">
 <p>
 Projectile is a project interaction library for Emacs. Its goal is to provide a nice set of features operating on a project level without introducing external dependencies (when feasible). For instance - finding project files has a portable implementation written in pure Emacs Lisp without the use of GNU find (but for performance sake an indexing mechanism backed by external commands exists as well).
 </p>
@@ -412,9 +412,9 @@ Projectile is a project interaction library for Emacs. Its goal is to provide a 
 </div>
 </div>
 
-<div id="outline-container-orgb897740" class="outline-3">
-<h3 id="orgb897740">Projectile-counsel</h3>
-<div class="outline-text-3" id="text-orgb897740">
+<div id="outline-container-orgbc99a54" class="outline-3">
+<h3 id="orgbc99a54">Projectile-counsel</h3>
+<div class="outline-text-3" id="text-orgbc99a54">
 <p>
 Setting counsel to works whit the projectile, improving the ui of the package
 </p>
@@ -429,9 +429,9 @@ Setting counsel to works whit the projectile, improving the ui of the package
 </div>
 </div>
 
-<div id="outline-container-orgb207216" class="outline-2">
-<h2 id="orgb207216">Magit</h2>
-<div class="outline-text-2" id="text-orgb207216">
+<div id="outline-container-orgc3633fc" class="outline-2">
+<h2 id="orgc3633fc">Magit</h2>
+<div class="outline-text-2" id="text-orgc3633fc">
 <p>
 Magit is a complete text-based user interface to Git. It fills the glaring gap between the Git command-line interface and various GUIs, letting you perform trivial as well as elaborate version control tasks with just a couple of mnemonic key presses.
 </p>
@@ -448,9 +448,9 @@ Magit is a complete text-based user interface to Git. It fills the glaring gap b
 </div>
 </div>
 
-<div id="outline-container-org3057325" class="outline-2">
-<h2 id="org3057325">Org and Forge</h2>
-<div class="outline-text-2" id="text-org3057325">
+<div id="outline-container-org40ec4b7" class="outline-2">
+<h2 id="org40ec4b7">Org and Forge</h2>
+<div class="outline-text-2" id="text-org40ec4b7">
 <p>
 Make sure Org and Forge is working on emacs:
 </p>
@@ -466,9 +466,9 @@ Make sure Org and Forge is working on emacs:
 </div>
 </div>
 
-<div id="outline-container-org1b4df10" class="outline-2">
-<h2 id="org1b4df10">Dashboard</h2>
-<div class="outline-text-2" id="text-org1b4df10">
+<div id="outline-container-orgf8d3c69" class="outline-2">
+<h2 id="orgf8d3c69">Dashboard</h2>
+<div class="outline-text-2" id="text-orgf8d3c69">
 <p>
 An extensible emacs startup screen showing you what’s most important.
 </p>
@@ -516,9 +516,9 @@ An extensible emacs startup screen showing you what’s most important.
 </div>
 </div>
 
-<div id="outline-container-org0676537" class="outline-2">
-<h2 id="org0676537">Vterm</h2>
-<div class="outline-text-2" id="text-org0676537">
+<div id="outline-container-orgb5292e3" class="outline-2">
+<h2 id="orgb5292e3">Vterm</h2>
+<div class="outline-text-2" id="text-orgb5292e3">
 <p>
 Vterm is a console emulator insde emacs, I se this package on this way:
 </p>
@@ -532,9 +532,9 @@ Vterm is a console emulator insde emacs, I se this package on this way:
 </div>
 </div>
 
-<div id="outline-container-org39312b3" class="outline-2">
-<h2 id="org39312b3">Making emacs a C IDE</h2>
-<div class="outline-text-2" id="text-org39312b3">
+<div id="outline-container-orgadf0978" class="outline-2">
+<h2 id="orgadf0978">Making emacs a C IDE</h2>
+<div class="outline-text-2" id="text-orgadf0978">
 <p>
 I'm a really lover of C and programmer of C, I like C, and for that I made this config:
 </p>
@@ -578,9 +578,9 @@ I'm a really lover of C and programmer of C, I like C, and for that I made this 
 </div>
 </div>
 
-<div id="outline-container-orgd0d9e40" class="outline-2">
-<h2 id="orgd0d9e40">End (for now)</h2>
-<div class="outline-text-2" id="text-orgd0d9e40">
+<div id="outline-container-org7cda5ab" class="outline-2">
+<h2 id="org7cda5ab">End (for now)</h2>
+<div class="outline-text-2" id="text-org7cda5ab">
 <p>
 This is the end of my configuration&#x2026; You can add this configuration and test it.
 </p>
