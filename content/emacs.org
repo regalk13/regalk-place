@@ -3,6 +3,8 @@
 #+AUTHOR: Regalk
 #+DESCRIPTION: Regalk's Emacs Config.
 
+(Publish Date: May 1, 2023)
+
 * IMPORTANT! PUT THIS IN YOUR INIT.EL
 
 If you want Emacs load the config from org file to init.el you need to add this code. This tells emacs to use this file to load the configuration.

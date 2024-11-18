@@ -13,15 +13,18 @@
 <body>
 <div id="content" class="content">
 <h1 class="title">Emacs Configuration</h1>
+<p>
+(Publish Date: May 1, 2023)
+</p>
 
-<div id="outline-container-org4183845" class="outline-2">
-<h2 id="org4183845">IMPORTANT! PUT THIS IN YOUR INIT.EL</h2>
-<div class="outline-text-2" id="text-org4183845">
+<div id="outline-container-orgaadeb5e" class="outline-2">
+<h2 id="orgaadeb5e">IMPORTANT! PUT THIS IN YOUR INIT.EL</h2>
+<div class="outline-text-2" id="text-orgaadeb5e">
 <p>
 If you want Emacs load the config from org file to init.el you need to add this code. This tells emacs to use this file to load the configuration.
 </p>
 
-<pre class="example" id="org6017b9b">
+<pre class="example" id="org4fc168f">
 (org-babel-load-file
 (expand-file-name
 "emacs.org"
@@ -30,9 +33,9 @@ user-emacs-directory))
 </div>
 </div>
 
-<div id="outline-container-org39eb173" class="outline-2">
-<h2 id="org39eb173">ABOUT THIS CONFIG</h2>
-<div class="outline-text-2" id="text-org39eb173">
+<div id="outline-container-org890c980" class="outline-2">
+<h2 id="org890c980">ABOUT THIS CONFIG</h2>
+<div class="outline-text-2" id="text-org890c980">
 <p>
 This is my personal Emacs config. Inspired by a brunch of resources I've found online. This is a vanilla emacs configuration whit some packages tome make a better experiencie whit this great elisp interpreter. I'm trying to maintain this config for me but also for works in every computer, but&#x2026; need some changes to do that. If you have improves to my code just pull a request.
 </p>
@@ -40,9 +43,9 @@ This is my personal Emacs config. Inspired by a brunch of resources I've found o
 </div>
 
 
-<div id="outline-container-orgd617eb5" class="outline-2">
-<h2 id="orgd617eb5">Setup the UI</h2>
-<div class="outline-text-2" id="text-orgd617eb5">
+<div id="outline-container-orgc6cdfb5" class="outline-2">
+<h2 id="orgc6cdfb5">Setup the UI</h2>
+<div class="outline-text-2" id="text-orgc6cdfb5">
 <p>
 First of all I like this configuration to setup the UI of emacs, I delete the startup message, the menu-bar, tool-bar and some scroll bar that emacs have for default:
 </p>
@@ -61,9 +64,9 @@ First of all I like this configuration to setup the UI of emacs, I delete the st
 </div>
 </div>
 
-<div id="outline-container-org266ae53" class="outline-2">
-<h2 id="org266ae53">A few programs to load</h2>
-<div class="outline-text-2" id="text-org266ae53">
+<div id="outline-container-org07c5088" class="outline-2">
+<h2 id="org07c5088">A few programs to load</h2>
+<div class="outline-text-2" id="text-org07c5088">
 <p>
 I add the repo of melpa, org and elpa to the source for packages, and after I load a few programs
 </p>
@@ -82,9 +85,9 @@ I add the repo of melpa, org and elpa to the source for packages, and after I lo
 </div>
 </div>
 
-<div id="outline-container-orgef3e204" class="outline-3">
-<h3 id="orgef3e204">use-package</h3>
-<div class="outline-text-3" id="text-orgef3e204">
+<div id="outline-container-orgcf9a7a7" class="outline-3">
+<h3 id="orgcf9a7a7">use-package</h3>
+<div class="outline-text-3" id="text-orgcf9a7a7">
 <p>
 Install use-package and enable ':ensure t' globally.  The ':ensure' keyword causes the package(s) within use-package statements to be installed automatically if not already present on your system.  To avoid having to add ':ensure t' to every use-package statement in this config, I set 'use-package-always-ensure'.
 </p>
@@ -100,34 +103,34 @@ Install use-package and enable ':ensure t' globally.  The ':ensure' keyword caus
 </div>
 </div>
 
-<div id="outline-container-org122154d" class="outline-2">
-<h2 id="org122154d">Themes and Fonts</h2>
-<div class="outline-text-2" id="text-org122154d">
+<div id="outline-container-orgcd6296c" class="outline-2">
+<h2 id="orgcd6296c">Themes and Fonts</h2>
+<div class="outline-text-2" id="text-orgcd6296c">
 </div>
-<div id="outline-container-orgcb2d7e3" class="outline-3">
-<h3 id="orgcb2d7e3">Fonts</h3>
-<div class="outline-text-3" id="text-orgcb2d7e3">
+<div id="outline-container-org017843a" class="outline-3">
+<h3 id="org017843a">Fonts</h3>
+<div class="outline-text-3" id="text-org017843a">
 <p>
 Currently I'm using FiraCode Nerd Font, and I set this whit set-face-attribute as default and height of 97, you can change this in order to you display DPI, also I set all-the-icons:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(use-package all-the-icons)
+<pre class="src src-emacs-lisp">(<span style="font-weight: bold;">use-package</span> all-the-icons)
 (set-face-attribute `default nil <span style="font-weight: bold;">:font</span> <span style="font-style: italic;">"FiraCode Nerd Font"</span> <span style="font-weight: bold;">:height</span> 97)
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgbf6e33f" class="outline-3">
-<h3 id="orgbf6e33f">Themes</h3>
-<div class="outline-text-3" id="text-orgbf6e33f">
+<div id="outline-container-org5bc58f2" class="outline-3">
+<h3 id="org5bc58f2">Themes</h3>
+<div class="outline-text-3" id="text-org5bc58f2">
 <p>
 I'm using the Doom Emacs themes, this repo have a lot of themes you can choose in my case im using a gruvbox theme for emacs&#x2026; You can watch the repo and select your favorite theme. I set the teme for neotree, treemacs and org-config. And in code is this:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(use-package doom-themes
+<pre class="src src-emacs-lisp">(<span style="font-weight: bold;">use-package</span> doom-themes
   <span style="font-weight: bold;">:ensure</span> t
   <span style="font-weight: bold;">:config</span>
   (<span style="font-weight: bold;">setq</span> doom-themes-enable-bold t
@@ -142,15 +145,15 @@ I'm using the Doom Emacs themes, this repo have a lot of themes you can choose i
 </div>
 </div>
 
-<div id="outline-container-orgb1fdeda" class="outline-3">
-<h3 id="orgb1fdeda">Rainbow delimiters</h3>
-<div class="outline-text-3" id="text-orgb1fdeda">
+<div id="outline-container-orgcc347d2" class="outline-3">
+<h3 id="orgcc347d2">Rainbow delimiters</h3>
+<div class="outline-text-3" id="text-orgcc347d2">
 <p>
 The rainbow delimiters are a package to add different colors to parentheses, braces and brackets to find them when they are nested in a better way.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(use-package rainbow-delimiters
+<pre class="src src-emacs-lisp">(<span style="font-weight: bold;">use-package</span> rainbow-delimiters
   <span style="font-weight: bold;">:hook</span> (prog-mode . rainbow-delimiters-mode))
 </pre>
 </div>
@@ -158,9 +161,9 @@ The rainbow delimiters are a package to add different colors to parentheses, bra
 </div>
 </div>
 
-<div id="outline-container-org03d9e9f" class="outline-2">
-<h2 id="org03d9e9f">Set key &lt;escace&gt;</h2>
-<div class="outline-text-2" id="text-org03d9e9f">
+<div id="outline-container-org4794691" class="outline-2">
+<h2 id="org4794691">Set key &lt;escace&gt;</h2>
+<div class="outline-text-2" id="text-org4794691">
 <p>
 I set escape to quit of whatever thing in emacs:
 </p>
@@ -172,9 +175,9 @@ I set escape to quit of whatever thing in emacs:
 </div>
 </div>
 
-<div id="outline-container-org7ce5f24" class="outline-2">
-<h2 id="org7ce5f24">Columns and numbers</h2>
-<div class="outline-text-2" id="text-org7ce5f24">
+<div id="outline-container-org1e73702" class="outline-2">
+<h2 id="org1e73702">Columns and numbers</h2>
+<div class="outline-text-2" id="text-org1e73702">
 <p>
 Setting the columns and the numbers in, also I add a list to ignore add this column:
 </p>
@@ -193,29 +196,29 @@ Setting the columns and the numbers in, also I add a list to ignore add this col
 </div>
 </div>
 
-<div id="outline-container-orgc8499af" class="outline-2">
-<h2 id="orgc8499af">Adding command-log-mode</h2>
-<div class="outline-text-2" id="text-orgc8499af">
+<div id="outline-container-org1c65517" class="outline-2">
+<h2 id="org1c65517">Adding command-log-mode</h2>
+<div class="outline-text-2" id="text-org1c65517">
 <p>
 Command-log-mode is a package to save all the history of keybindings, for testing and debuging and maybe my future streams:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(use-package command-log-mode)
+<pre class="src src-emacs-lisp">(<span style="font-weight: bold;">use-package</span> command-log-mode)
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgb0898f0" class="outline-2">
-<h2 id="orgb0898f0">Whick key</h2>
-<div class="outline-text-2" id="text-orgb0898f0">
+<div id="outline-container-org6b6bcc2" class="outline-2">
+<h2 id="org6b6bcc2">Whick key</h2>
+<div class="outline-text-2" id="text-org6b6bcc2">
 <p>
 This package will show you the avaliable keybindings in popup:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(use-package which-key
+<pre class="src src-emacs-lisp">(<span style="font-weight: bold;">use-package</span> which-key
   <span style="font-weight: bold;">:init</span> (which-key-mode)
   <span style="font-weight: bold;">:diminish</span> which-key-mode
   <span style="font-weight: bold;">:config</span>
@@ -225,16 +228,16 @@ This package will show you the avaliable keybindings in popup:
 </div>
 </div>
 
-<div id="outline-container-org4556601" class="outline-2">
-<h2 id="org4556601">Setting ivy and counsel</h2>
-<div class="outline-text-2" id="text-org4556601">
+<div id="outline-container-org0add618" class="outline-2">
+<h2 id="org0add618">Setting ivy and counsel</h2>
+<div class="outline-text-2" id="text-org0add618">
 <p>
 Ivy is a generic completion mechanism for Emacs. While it operates similarly to other completion schemes such as icomplete-mode, Ivy aims to be more efficient, smaller, simpler, and smoother to use yet highly customizable.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(use-package command-log-mode)
-(use-package ivy
+<pre class="src src-emacs-lisp">(<span style="font-weight: bold;">use-package</span> command-log-mode)
+(<span style="font-weight: bold;">use-package</span> ivy
   <span style="font-weight: bold;">:diminish</span>
   <span style="font-weight: bold;">:bind</span> ((<span style="font-style: italic;">"C-s"</span> . swiper)
          <span style="font-weight: bold;">:map</span> ivy-minibuffer-map
@@ -262,15 +265,15 @@ Ivy is a generic completion mechanism for Emacs. While it operates similarly to 
 </div>
 </div>
 
-<div id="outline-container-org91fbab2" class="outline-3">
-<h3 id="org91fbab2">ivy-rich</h3>
-<div class="outline-text-3" id="text-org91fbab2">
+<div id="outline-container-org01de627" class="outline-3">
+<h3 id="org01de627">ivy-rich</h3>
+<div class="outline-text-3" id="text-org01de627">
 <p>
 Setting the ivy-rich:
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(use-package ivy-rich
+<pre class="src src-emacs-lisp">(<span style="font-weight: bold;">use-package</span> ivy-rich
   <span style="font-weight: bold;">:init</span>
   (ivy-rich-mode 1))
 </pre>
@@ -279,9 +282,9 @@ Setting the ivy-rich:
 </div>
 </div>
 
-<div id="outline-container-orgc53aa1c" class="outline-2">
-<h2 id="orgc53aa1c">Elcord</h2>
-<div class="outline-text-2" id="text-orgc53aa1c">
+<div id="outline-container-org7b7bb6a" class="outline-2">
+<h2 id="org7b7bb6a">Elcord</h2>
+<div class="outline-text-2" id="text-org7b7bb6a">
 <p>
 I usually use discord and I like to compart in the rich presence, where, which time and whwat file I'm editing this package helps me:
 </p>
@@ -294,15 +297,15 @@ I usually use discord and I like to compart in the rich presence, where, which t
 </div>
 </div>
 
-<div id="outline-container-orgda6b037" class="outline-2">
-<h2 id="orgda6b037">Doom modeline</h2>
-<div class="outline-text-2" id="text-orgda6b037">
+<div id="outline-container-org95511f3" class="outline-2">
+<h2 id="org95511f3">Doom modeline</h2>
+<div class="outline-text-2" id="text-org95511f3">
 <p>
 A fancy and fast mode-line inspired by minimalism design.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(use-package doom-modeline
+<pre class="src src-emacs-lisp">(<span style="font-weight: bold;">use-package</span> doom-modeline
   <span style="font-weight: bold;">:ensure</span> t
   <span style="font-weight: bold;">:init</span> (doom-modeline-mode 1)
   <span style="font-weight: bold;">:custom</span> ((doom-modeline-height 20)))
@@ -311,15 +314,15 @@ A fancy and fast mode-line inspired by minimalism design.
 </div>
 </div>
 
-<div id="outline-container-org6f79ce0" class="outline-2">
-<h2 id="org6f79ce0">General</h2>
-<div class="outline-text-2" id="text-org6f79ce0">
+<div id="outline-container-org1a28a89" class="outline-2">
+<h2 id="org1a28a89">General</h2>
+<div class="outline-text-2" id="text-org1a28a89">
 <p>
 General package provides a more convenient method for binding keys in emacs (for both evil and non-evil users).
 </p>
 
 <div class="org-src-container">
-<pre class="src src-emacs-lisp">(use-package general
+<pre class="src src-emacs-lisp">(<span style="font-weight: bold;">use-package</span> general
   <span style="font-weight: bold;">:config</span>
   (general-create-definer rune/leader-keys
     <span style="font-weight: bold; font-style: italic;">;;</span><span style="font-weight: bold; font-style: italic;">:keymaps '(normal insert visual emacs)</span>
@@ -330,16 +333,16 @@ General package provides a more convenient method for binding keys in emacs (for
 </div>
 </div>
 
-<div id="outline-container-org8d5d630" class="outline-2">
-<h2 id="org8d5d630">Evil mode</h2>
-<div class="outline-text-2" id="text-org8d5d630">
+<div id="outline-container-org2fc2bb5" class="outline-2">
+<h2 id="org2fc2bb5">Evil mode</h2>
+<div class="outline-text-2" id="text-org2fc2bb5">
 <p>
 Evil is an extensible vi layer for Emacs. It emulates the main features of Vim, and provides facilities for writing custom extensions.
 </p>
 
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">
-(use-package evil
+(<span style="font-weight: bold;">use-package</span> evil
    <span style="font-weight: bold;">:init</span>
    (<span style="font-weight: bold;">setq</span> evil-want-integration t)
    (<span style="font-weight: bold;">setq</span> evil-want-keybinding nil)
@@ -356,7 +359,7 @@ Evil is an extensible vi layer for Emacs. It emulates the main features of Vim, 
    (evil-set-initial-state 'messages-buffer-mode 'normal)
    (evil-set-initial-state 'dashboard-mode 'normal))
 
-(use-package evil-collection
+(<span style="font-weight: bold;">use-package</span> evil-collection
   <span style="font-weight: bold;">:after</span> evil
   <span style="font-weight: bold;">:config</span>
   (evil-collection-init))
@@ -366,16 +369,16 @@ Evil is an extensible vi layer for Emacs. It emulates the main features of Vim, 
 </div>
 </div>
 
-<div id="outline-container-org52b6fcb" class="outline-2">
-<h2 id="org52b6fcb">Hydra</h2>
-<div class="outline-text-2" id="text-org52b6fcb">
+<div id="outline-container-org5a67a0b" class="outline-2">
+<h2 id="org5a67a0b">Hydra</h2>
+<div class="outline-text-2" id="text-org5a67a0b">
 <p>
 This is a package for GNU Emacs that can be used to tie related commands into a family of short bindings with a common prefix - a Hydra.
 </p>
 
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">
-(use-package hydra)
+(<span style="font-weight: bold;">use-package</span> hydra)
 
 (defhydra hydra-text-scale (<span style="font-weight: bold;">:timeout</span> 4)
   <span style="font-style: italic;">"scale text"</span>
@@ -388,16 +391,16 @@ This is a package for GNU Emacs that can be used to tie related commands into a 
 </div>
 </div>
 
-<div id="outline-container-org4759344" class="outline-2">
-<h2 id="org4759344">Projectile</h2>
-<div class="outline-text-2" id="text-org4759344">
+<div id="outline-container-orgcae3079" class="outline-2">
+<h2 id="orgcae3079">Projectile</h2>
+<div class="outline-text-2" id="text-orgcae3079">
 <p>
 Projectile is a project interaction library for Emacs. Its goal is to provide a nice set of features operating on a project level without introducing external dependencies (when feasible). For instance - finding project files has a portable implementation written in pure Emacs Lisp without the use of GNU find (but for performance sake an indexing mechanism backed by external commands exists as well).
 </p>
 
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">
-(use-package projectile
+(<span style="font-weight: bold;">use-package</span> projectile
   <span style="font-weight: bold;">:diminish</span> projectile-mode
   <span style="font-weight: bold;">:config</span> (projectile-mode)
   <span style="font-weight: bold;">:custom</span> ((projectile-completion-system 'ivy))
@@ -412,16 +415,16 @@ Projectile is a project interaction library for Emacs. Its goal is to provide a 
 </div>
 </div>
 
-<div id="outline-container-orgbc99a54" class="outline-3">
-<h3 id="orgbc99a54">Projectile-counsel</h3>
-<div class="outline-text-3" id="text-orgbc99a54">
+<div id="outline-container-org66b0bd6" class="outline-3">
+<h3 id="org66b0bd6">Projectile-counsel</h3>
+<div class="outline-text-3" id="text-org66b0bd6">
 <p>
 Setting counsel to works whit the projectile, improving the ui of the package
 </p>
 
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">
-(use-package counsel-projectile
+(<span style="font-weight: bold;">use-package</span> counsel-projectile
   <span style="font-weight: bold;">:config</span> (counsel-projectile-mode))
 </pre>
 </div>
@@ -429,16 +432,16 @@ Setting counsel to works whit the projectile, improving the ui of the package
 </div>
 </div>
 
-<div id="outline-container-orgc3633fc" class="outline-2">
-<h2 id="orgc3633fc">Magit</h2>
-<div class="outline-text-2" id="text-orgc3633fc">
+<div id="outline-container-orgc254d72" class="outline-2">
+<h2 id="orgc254d72">Magit</h2>
+<div class="outline-text-2" id="text-orgc254d72">
 <p>
 Magit is a complete text-based user interface to Git. It fills the glaring gap between the Git command-line interface and various GUIs, letting you perform trivial as well as elaborate version control tasks with just a couple of mnemonic key presses.
 </p>
 
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">
-(use-package magit
+(<span style="font-weight: bold;">use-package</span> magit
   <span style="font-weight: bold;">:commands</span> (magit-status magit-get-current-branch)
   <span style="font-weight: bold;">:custom</span>
   (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
@@ -448,34 +451,34 @@ Magit is a complete text-based user interface to Git. It fills the glaring gap b
 </div>
 </div>
 
-<div id="outline-container-org40ec4b7" class="outline-2">
-<h2 id="org40ec4b7">Org and Forge</h2>
-<div class="outline-text-2" id="text-org40ec4b7">
+<div id="outline-container-org6353a88" class="outline-2">
+<h2 id="org6353a88">Org and Forge</h2>
+<div class="outline-text-2" id="text-org6353a88">
 <p>
 Make sure Org and Forge is working on emacs:
 </p>
 
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">
-(use-package forge)
+(<span style="font-weight: bold;">use-package</span> forge)
 
-(use-package org)
+(<span style="font-weight: bold;">use-package</span> org)
 
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgf8d3c69" class="outline-2">
-<h2 id="orgf8d3c69">Dashboard</h2>
-<div class="outline-text-2" id="text-orgf8d3c69">
+<div id="outline-container-org01be66a" class="outline-2">
+<h2 id="org01be66a">Dashboard</h2>
+<div class="outline-text-2" id="text-org01be66a">
 <p>
 An extensible emacs startup screen showing you what’s most important.
 </p>
 
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">
-(use-package dashboard
+(<span style="font-weight: bold;">use-package</span> dashboard
   <span style="font-weight: bold;">:ensure</span> t
   <span style="font-weight: bold;">:config</span>
   (dashboard-setup-startup-hook))
@@ -516,25 +519,25 @@ An extensible emacs startup screen showing you what’s most important.
 </div>
 </div>
 
-<div id="outline-container-orgb5292e3" class="outline-2">
-<h2 id="orgb5292e3">Vterm</h2>
-<div class="outline-text-2" id="text-orgb5292e3">
+<div id="outline-container-org3ee06be" class="outline-2">
+<h2 id="org3ee06be">Vterm</h2>
+<div class="outline-text-2" id="text-org3ee06be">
 <p>
 Vterm is a console emulator insde emacs, I se this package on this way:
 </p>
 
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">
-(use-package vterm
+(<span style="font-weight: bold;">use-package</span> vterm
   <span style="font-weight: bold;">:load-path</span> <span style="font-style: italic;">"~/emacs-libvterm/"</span>)
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgadf0978" class="outline-2">
-<h2 id="orgadf0978">Making emacs a C IDE</h2>
-<div class="outline-text-2" id="text-orgadf0978">
+<div id="outline-container-org97a0ddc" class="outline-2">
+<h2 id="org97a0ddc">Making emacs a C IDE</h2>
+<div class="outline-text-2" id="text-org97a0ddc">
 <p>
 I'm a really lover of C and programmer of C, I like C, and for that I made this config:
 </p>
@@ -578,9 +581,9 @@ I'm a really lover of C and programmer of C, I like C, and for that I made this 
 </div>
 </div>
 
-<div id="outline-container-org7cda5ab" class="outline-2">
-<h2 id="org7cda5ab">End (for now)</h2>
-<div class="outline-text-2" id="text-org7cda5ab">
+<div id="outline-container-org384a212" class="outline-2">
+<h2 id="org384a212">End (for now)</h2>
+<div class="outline-text-2" id="text-org384a212">
 <p>
 This is the end of my configuration&#x2026; You can add this configuration and test it.
 </p>
@@ -588,7 +591,7 @@ This is the end of my configuration&#x2026; You can add this configuration and t
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5)</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.6.15)</p>
 </div>
 </body>
 </html>

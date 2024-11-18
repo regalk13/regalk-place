@@ -3,17 +3,16 @@
 
 #+begin_export html
 <div class="header">
-  <div class="topbar-menu-container">
+  <ul class="topbar-menu-container">
     |
-    <span class="topbar-menu current"><a href="index.html">Home</a></span>
+    <li class="topbar-menu current"><a href="index.html">Home</a></li>
     |
-    <span class="topbar-menu"><a href="#">Dotfiles</a></span>
+    <li class="topbar-menu"><a href="dotfiles.html">Dotfiles</a></li>
     |
-    <span class="topbar-menu"><a href="#">Projects</a></span>
+    <li class="topbar-menu"><a target="_blank" href="https://github.com/regalk13/?tab=repositories">Projects</a></li>
     |
-    <span class="topbar-menu"><a href="#">Blog</a></span>
-    |
-  </div>
+    <li class="topbar-menu"><a href="notes.html">Notes</a></li>
+  </ul>
 </div>
 <br>
 #+end_export

@@ -2,17 +2,16 @@
 
 #+begin_export html
 <div class="header">
-  <div class="topbar-menu-container">
+  <ul class="topbar-menu-container">
     |
-    <span class="topbar-menu current"><a href="#">Home</a></span>
+    <li class="topbar-menu current"><a href="#">Home</a></li>
     |
-    <span class="topbar-menu"><a href="dotfiles.html">Dotfiles</a></span>
+    <li class="topbar-menu"><a href="dotfiles.html">Dotfiles</a></li>
     |
-    <span class="topbar-menu"><a href="#">Projects</a></span>
+    <li class="topbar-menu"><a target="_blank" href="https://github.com/regalk13/?tab=repositories">Projects</a></li>
     |
-    <span class="topbar-menu"><a href="#">Blog</a></span>
-    |
-  </div>
+    <li class="topbar-menu"><a href="notes.html">Notes</a></li>
+  </ul>
 </div>
 <br>
 #+end_export
@@ -31,24 +30,41 @@
    <li>Python</li>
    <li>JavaScript</li>
    <li>Java</li>
+   <li>Nix</li>
    <li>SQL & NO-SQL</li>
 </ul>
 
-<p>Read more about my skills and projects in my <a href="https://github.com/regalk13">github</a>.
-<h3>Fun Facts</h3>
+
+<p>Read more about my skills and projects in my <a href="https://github.com/regalk13">GitHub</a>.
+
+<h3>Setup</h3>
+
+<p>Linux Setup</p>
+<p>- Distro: NixOs unstable or 24.11.</p>
+<p>- Editor: Mostly emacs sometimes Vim.</p>
+<p>- WM: Hyprland (Now a full-time Wayland user).</p>
+<p>- Terminal: Kitty.</p>
+<p>- Theme: Tokyo Night or Rosepine.</p>
+<p>- Font: Iosevka NerdFont.</p>
+
+<h3>Fun facts</h3>
 
 <ul>
-   <li>I'm a lifelong <span class="mark">learner</span> who's always hungry for knowledge. Whether it's mastering a new programming language or exploring the latest trends in AI, I'm always up for a challenge.</li>
-   <li>I really like to play <span class="mark">chess</span>. I love how the game challenges me to think ahead and strategize, and I'm always looking for new opponents to crush.</li>
-   <li>I'm into DIY, in my free time I'm <span class="mark">fixing</span> everything I can and <span class="mark">building</span> what I need.</li>
-   <li>I love the <span class="mark">computer graphics</span> field, programming, math and videogames in the same place!</li>
+   <li>I'm a lifelong <span class="mark">learner</span>, always open to new knowlegde.</li>
+   <li>I like to play Chess and GO.</li>
 </ul>
 
+#+end_export
+
+* Notes
+
+#+begin_export html
+<p>Read my public notes at my <a href="notes.html">Notes Page</a></p>
 #+end_export
 
 * Contact me
 
 #+begin_export html
+<p>If you'd like to get in touch with me, feel free to reach out via Discord: <span class="mark">Regalk</span>. I'm always open to open source projects.</p>
 
-<p>If you'd like to get in touch with me regarding a project, partnership, or other professional inquiry, feel free to reach out via email at <span class="mark">regalkinformation@gmail.com</span> or on Discord at <span class="mark">regalk#8443</span>. You can also find me on Twitter at <span class="mark">@reg4Ik</span>. I am always open to new opportunities and collaborations, and I strive to maintain clear and timely communication with all of my contacts.</p>
 #+end_export
